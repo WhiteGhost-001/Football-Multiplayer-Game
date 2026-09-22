@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d80ff8ff482841d469a2f686c3372c57
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 387264
+  packageName: Fence Modular System LITE
+  packageVersion: 1.2.0
+  assetPath: Assets/Fence Modular System/Animations/single_gate_V1.anim
+  uploadId: 976554

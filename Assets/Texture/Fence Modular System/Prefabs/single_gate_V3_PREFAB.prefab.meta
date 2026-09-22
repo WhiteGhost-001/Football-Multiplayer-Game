@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 043b845fa9654f243b6144bd6a4ba3df
+labels:
+- AUTO
+- PREFAB
+- WB
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 387264
+  packageName: Fence Modular System LITE
+  packageVersion: 1.2.0
+  assetPath: Assets/Fence Modular System/Prefabs/single_gate_V3_PREFAB.prefab
+  uploadId: 976554

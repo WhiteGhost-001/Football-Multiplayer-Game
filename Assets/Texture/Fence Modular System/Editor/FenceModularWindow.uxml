@@ -1,0 +1,76 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement class="root">
+
+        <ui:VisualElement class="header">
+            <ui:Label name="app-title" text="Fence Modular System" class="title" />
+        </ui:VisualElement>
+
+        <ui:ScrollView class="scroll">
+
+            <ui:VisualElement class="card">
+                <ui:Label text="BUILD" class="card-title" />
+                <ui:Label text="Start build mode, then click in the Scene View to place pillars and rails." class="card-desc" />
+                <ui:Button name="build-btn" text="Start Build Mode" class="btn btn-primary btn-tall" />
+                <ui:Toggle name="full-detail-toggle" label="Full Detail" class="opt-toggle solo-toggle"
+                           tooltip="When enabled, all elements display at highest detail (LOD0) regardless of camera distance. Disable for runtime LOD optimization." />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="card">
+                <ui:Label text="FENCE TYPE" class="card-title" />
+                <ui:Label text="Pick a type. With a fence selected the arrows convert it in place." class="card-desc" />
+
+                <ui:VisualElement name="type-preview" class="preview preview-large">
+                    <ui:VisualElement name="type-lock" class="lock-badge lock-badge-large hidden" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:VisualElement class="carousel-bar">
+                    <ui:Button name="type-prev" text="&lt;" class="arrow" />
+                    <ui:Label name="type-name" text="Picket Fence" class="carousel-caption" picking-mode="Ignore" />
+                    <ui:Button name="type-next" text="&gt;" class="arrow" />
+                </ui:VisualElement>
+
+                <ui:Label name="lite-hint" text="LITE version - 2 of 5 fence types, 1 finish each." class="lite-hint" />
+                <ui:Button name="upsell-btn" text="Get the Full Version  (all 5 types &amp; finishes)" class="btn btn-upsell" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="texture-card" class="card">
+                <ui:Label text="TEXTURE VARIANT" class="card-title" />
+                <ui:Label name="texture-desc" text="Select a fence in the Scene View to change its finish." class="card-desc" />
+
+                <ui:VisualElement class="finish-row">
+
+                    <ui:VisualElement class="finish-col">
+                        <ui:VisualElement name="new-preview" class="preview preview-small">
+                            <ui:VisualElement name="new-lock" class="lock-badge lock-badge-small hidden" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="carousel-bar">
+                            <ui:Button name="new-prev" text="&lt;" class="arrow" />
+                            <ui:Label name="new-name" text="New #1" class="carousel-caption" picking-mode="Ignore" />
+                            <ui:Button name="new-next" text="&gt;" class="arrow" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="finish-col">
+                        <ui:VisualElement name="worn-preview" class="preview preview-small">
+                            <ui:VisualElement name="worn-lock" class="lock-badge lock-badge-small hidden" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="carousel-bar">
+                            <ui:Button name="worn-prev" text="&lt;" class="arrow" />
+                            <ui:Label name="worn-name" text="Worn #1" class="carousel-caption" picking-mode="Ignore" />
+                            <ui:Button name="worn-next" text="&gt;" class="arrow" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="card">
+                <ui:Label text="OPTIONS" class="card-title" />
+                <ui:Label text="Flip rails and gates, or mirror a single gate inside its section." class="card-desc" />
+                <ui:Button name="flip-btn" text="Flip Selected" class="btn btn-secondary" />
+                <ui:Button name="mirror-gate-btn" text="Mirror Single-Gate" class="btn btn-secondary" />
+            </ui:VisualElement>
+
+        </ui:ScrollView>
+
+    </ui:VisualElement>
+</ui:UXML>

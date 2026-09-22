@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8ac6233da3747de43a905b4bc1635fab
+labels:
+- AUTO
+- PREFAB
+- WB
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 387264
+  packageName: Fence Modular System LITE
+  packageVersion: 1.2.0
+  assetPath: Assets/Fence Modular System/Prefabs/sectionB_V3_PREFAB.prefab
+  uploadId: 976554

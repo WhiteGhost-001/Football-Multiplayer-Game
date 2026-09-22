@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7669154d0532d38468bbc7ed41c52bc0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 387264
+  packageName: Fence Modular System LITE
+  packageVersion: 1.2.0
+  assetPath: Assets/Fence Modular System/Editor/FenceModularWindow_Ghost.cs
+  uploadId: 976554

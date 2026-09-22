@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 83c11190c92e23941bf45ad5e799fc7e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 387264
+  packageName: Fence Modular System LITE
+  packageVersion: 1.2.0
+  assetPath: Assets/Fence Modular System/Animations/double_gate_V1_PREFAB.controller
+  uploadId: 976554

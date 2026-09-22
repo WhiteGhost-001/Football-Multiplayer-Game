@@ -1,0 +1,12 @@
+# ninja log v5
+116	708	8116157528419362	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	5650d53031d2c7de
+710	1123	8116157531927951	C:/Users/Kevin/Football Multiplayer/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/354w326n/obj/arm64-v8a/libswappywrapper.so	721b1a8c25020058
+70	3155	8116157552596631	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	83ca5fedfdbe6266
+101	3321	8116157554097886	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	c6e9e9dbb95bdef4
+44	3362	8116157554241813	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	c2db9f6a1e8d762a
+0	3714	8116157558185962	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	ab850c2cca3f9d6d
+15	4347	8116157564112140	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	edcd38f206c3fb0b
+83	6327	8116157584252225	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	b407b92be6c4dbd5
+57	6624	8116157587233852	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	640cd8bdbdd78416
+28	7182	8116157592809786	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	897f19264c2e88dc
+7184	7406	8116157595467405	C:/Users/Kevin/Football Multiplayer/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/354w326n/obj/arm64-v8a/libgame.so	aeb1465fae4e577d

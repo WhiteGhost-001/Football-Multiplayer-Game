@@ -1,0 +1,120 @@
+{\rtf1\ansi\ansicpg1252\deff0
+{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+\viewkind4\uc1
+\pard\sa120\f0\fs36\b FENCE MODULAR SYSTEM LITE\b0\fs22\par
+\pard\sa120\fs24 User Guide and Script Reference\par
+\pard\sa240\fs20 Free LITE version - includes the complete Editor tool and 2 of the 5 fence types.\par
+
+\pard\sa120\fs28\b CONTENTS\b0\fs22\par
+\pard\sa0 1. Installation\par
+2. Render Pipeline Setup\par
+3. Quick Start\par
+4. The Tool Window\par
+5. Building a Fence\par
+6. Continue Build\par
+7. Corners\par
+8. Close Loop\par
+9. Gates\par
+10. Flip and Mirror\par
+11. Fence Type and Texture Variant\par
+12. Selection, Deletion and Undo\par
+13. Full Detail and Performance\par
+14. Package Contents\par
+15. Script Reference\par
+16. Troubleshooting\par
+\pard\sa240 17. Support and Full Version\par
+
+\pard\sa120\fs28\b 1. INSTALLATION\b0\fs22\par
+\pard\sa120 Import the complete package into your project. The package contains separate material sets for all three render pipelines (Built-In, URP and HDRP).\par
+After the import has finished and Unity has compiled the scripts, the materials matching your project's active render pipeline are assigned to all prefabs automatically. No manual setup is required.\par
+Optionally, to keep your project smaller, you can deselect the folders of the pipelines you do not use during import:\par
+\pard\sa0\li360 - Built-In project: deselect the "URP" and "HDRP" folders\par
+- URP project: deselect the "Built-In" and "HDRP" folders\par
+\pard\sa240\li360 - HDRP project: deselect the "URP & Built-In" folder\par
+
+\pard\sa120\fs28\b 2. RENDER PIPELINE SETUP\b0\fs22\par
+\pard\sa120 No shader or material setup is required. The package ships one demo scene per render pipeline:\par
+\pard\sa0\li360 - HDRP: Fence Modular System/HDRP/Scenes/DemoScene.unity\par
+- URP: Fence Modular System/URP & Built-In/URP/Scenes/DemoScene.unity\par
+\pard\sa120\li360 - Built-In: Fence Modular System/URP & Built-In/Built-In/Scenes/DemoScene.unity\par
+\pard\sa240\li0 Please open the demo scene that matches your active render pipeline. The demo scenes of the other pipelines contain camera and light components belonging to those pipelines and will report missing components if opened in a different pipeline. This is expected and does not affect the fence assets, prefabs or the Editor tool.\par
+
+\pard\sa120\fs28\b 3. QUICK START\b0\fs22\par
+\pard\sa0\li360 1. Open the tool from the menu bar: Tools > Fence Modular System\par
+2. Choose a fence type using the arrows below the preview image.\par
+3. Click "Start Build Mode".\par
+4. Move the mouse over your scene geometry. A ghost preview of the start post follows the cursor.\par
+5. Left-click to place the start post.\par
+6. Choose a build direction using the on-screen direction arrows.\par
+7. Move the mouse to extend the fence and left-click to commit the previewed segments.\par
+\pard\sa240\li360 8. Press Escape or click "Stop Build Mode" to finish.\par
+
+\pard\sa120\fs28\b 4. THE TOOL WINDOW\b0\fs22\par
+\pard\sa120\b Start Build Mode / Stop Build Mode\b0\line Starts and ends the interactive building workflow in the Scene View.\par
+\b Full Detail\b0\line When enabled, all elements are displayed at their highest detail level (LOD0) regardless of camera distance. Disable this for runtime LOD optimization.\par
+\b Fence Type\b0\line Shows a preview of the active fence type. The left and right arrows below the frame cycle through all five types. Types that are not part of the LITE version are marked with a gold padlock and cannot be built; clicking such a preview opens the full version on the Asset Store.\par
+\b Get the Full Version\b0\line Opens the Asset Store page of the full Fence Modular System.\par
+\b Texture Variant\b0\line Switches the selected fence between the New and Worn texture set. Click a preview image to apply that variant; the active one is marked by a highlighted frame. The arrows below each frame cycle that column's finish. This section only works while a fence is selected in the scene.\par
+\pard\sa240\b Options\b0\line Contains the "Flip Selected" and "Mirror Single-Gate" actions described in section 10.\par
+
+\pard\sa120\fs28\b 5. BUILDING A FENCE\b0\fs22\par
+\pard\sa120 While Build Mode is active, a real-time ghost preview shows exactly what will be built before you commit. Direction arrows in the Scene View guide the placement.\par
+The ghost start post automatically validates the surface underneath it. Slopes, obstacles and objects that would prevent proper construction are detected, and invalid placements are indicated visually before you click. When no surface is detected below the cursor, the post snaps to Y = 0.\par
+\pard\sa240 A slope tolerance of 3 degrees is applied, so fences are only placed on surfaces that are flat within that tolerance. This keeps the result architecturally plausible.\par
+
+\pard\sa120\fs28\b 6. CONTINUE BUILD\b0\fs22\par
+\pard\sa240 Any existing fence can be extended from its end posts. Select an end post, pick a direction, and continue building. New segments are connected seamlessly to the existing structure, and the whole continue session is treated as a single undo step.\par
+
+\pard\sa120\fs28\b 7. CORNERS\b0\fs22\par
+\pard\sa240 90 degree corners are fully integrated into the building workflow. The system places the correct corner post and adjusts its orientation automatically, depending on the direction in which you continue building.\par
+
+\pard\sa120\fs28\b 8. CLOSE LOOP\b0\fs22\par
+\pard\sa240 The end of a fence can be connected back to an existing post to form a closed circuit. The system detects the proximity to the target post, highlights the resulting connection in green, and replaces the affected posts with the correct post type when you commit.\par
+
+\pard\sa120\fs28\b 9. GATES\b0\fs22\par
+\pard\sa120 Single and double gates are included for both fence types. They are fully integrated into the snap-based workflow and use matching post connections.\par
+\pard\sa240 All gates feature working open and close animations. The gate animation is driven by the GateAnimationController component and runs in Play Mode only: click a gate to open it, and click it again to close it.\par
+
+\pard\sa120\fs28\b 10. FLIP AND MIRROR\b0\fs22\par
+\pard\sa120\b Flip Selected\b0\line Mirrors the selected fence or the selected elements. Gate animations are flipped together with the visuals, so a flipped gate still opens correctly.\par
+\pard\sa240\b Mirror Single-Gate\b0\line Mirrors an individual single gate, for example to change the side on which it opens.\par
+
+\pard\sa120\fs28\b 11. FENCE TYPE AND TEXTURE VARIANT\b0\fs22\par
+\pard\sa120 The LITE version includes two fence types: Picket Fence and Wrought Iron Fence. Both types share standardized snap points, so switching between them is a seamless prefab swap that requires no repositioning.\par
+\pard\sa240 Each type ships with one texture set in New and Worn condition. The finish arrows cycle through all four slots so you can see what is available; the three that are not part of the LITE version show a gold padlock and are not applied. The full version unlocks four New and four Worn sets per type.\par
+
+\pard\sa120\fs28\b 12. SELECTION, DELETION AND UNDO\b0\fs22\par
+\pard\sa120 Clicking a fence section automatically co-selects its connected posts for visual clarity. Hold Shift and click to multi-select several sections; the posts between them are highlighted automatically.\par
+Deleting one or more sections triggers automatic post repair: orphaned end posts are converted to the correct post type so that the structure stays clean.\par
+Posts themselves cannot be deleted directly. The system intercepts delete commands on posts in order to prevent broken fences.\par
+\pard\sa240 Every action, including a complete Continue Build session, is grouped into a single undo step. Ctrl+Z therefore reverts the entire operation instead of individual pieces.\par
+
+\pard\sa120\fs28\b 13. FULL DETAIL AND PERFORMANCE\b0\fs22\par
+\pard\sa240 Each fence type uses only one material, regardless of the length or complexity of the fence. Combined with Unity's Static Batching this keeps the number of draw calls low even in large scenes. The Full Detail toggle described in section 4 controls whether LOD levels are used at runtime.\par
+
+\pard\sa120\fs28\b 14. PACKAGE CONTENTS\b0\fs22\par
+\pard\sa0\li360 - Complete Editor tool, no runtime dependencies\par
+- 2 fence types: Picket Fence and Wrought Iron Fence\par
+- 1 texture set per type, in New and Worn condition\par
+- All post types: End, Middle and Corner\par
+- Straight sections, single gates and double gates with animations\par
+- Separate materials for Built-In, URP and HDRP\par
+\pard\sa240\li360 - One demo scene per render pipeline\par
+
+\pard\sa120\fs28\b 15. SCRIPT REFERENCE\b0\fs22\par
+\pard\sa120 All scripts are contained in the namespace WB3DAssets.FenceModularSystem.\par
+\b FenceModularWindow\b0 (Editor)\line The Editor window that provides the complete building workflow. It is opened from Tools > Fence Modular System and is implemented as a partial class across several files (build, chain, continue, ghost, utility and variant logic). It also assigns the materials matching the active render pipeline after import.\par
+\pard\sa240\b GateAnimationController\b0 (Runtime)\line Attached to the root of every gate prefab. In Play Mode it plays the gate animation forward on click and in reverse on the next click, and it supports flipped gates. It works with both the legacy Input Manager and the new Input System. No further setup is required; the component is already configured on the gate prefabs.\par
+
+\pard\sa120\fs28\b 16. TROUBLESHOOTING\b0\fs22\par
+\pard\sa120\b Materials appear pink or magenta directly after import\b0\line The automatic material assignment runs once Unity has finished compiling the scripts. Wait for the compilation to complete, then open the tool from Tools > Fence Modular System. The prefabs are converted to your active render pipeline automatically.\par
+\b The tool window appears empty\b0\line Close the window and reopen it from Tools > Fence Modular System.\par
+\b A fence cannot be placed at a certain position\b0\line The surface slope exceeds the 3 degree tolerance, or an obstacle blocks the placement. Invalid positions are indicated by the ghost preview before you click.\par
+\b Gates do not animate\b0\line The gate animation runs in Play Mode only. Enter Play Mode and click the gate.\par
+\pard\sa240\b A demo scene reports missing components\b0\line You opened the demo scene of a different render pipeline. Please open the demo scene that matches your active pipeline, as listed in section 2.\par
+
+\pard\sa120\fs28\b 17. SUPPORT AND FULL VERSION\b0\fs22\par
+\pard\sa120 Video tutorial: https://youtu.be/MCh_GYCMQ-E\par
+Full version (all 5 fence types, 4 finishes each in New and Worn, 4K textures):\line https://assetstore.unity.com/packages/3d/environments/fence-modular-system-370338\par
+\pard\sa240 For questions and support, please use the publisher contact form on the Asset Store package page.\par
+}

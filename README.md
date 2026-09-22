@@ -1,0 +1,20 @@
+# Football Multiplayer ⚽
+
+A 1v1 multiplayer football (soccer) game built with Unity and Photon PUN 2. 
+
+## Features
+* **Online Multiplayer:** 1v1 matchmaking using Photon Unity Networking (PUN 2).
+* **Training Mode:** Offline single-player mode with AI practice dummies and slalom cones to hone your skills.
+* **Stamina System:** Sprinting drains stamina, which regenerates over time.
+* **Dynamic Camera:** Third-person camera that smoothly follows the player and reacts to gameplay (e.g., screen shake on goals).
+
+## Controls
+* **W A S D** - Move
+* **LEFT SHIFT** - Sprint (Uses stamina)
+* **SPACE** - Shoot
+* **RIGHT CLICK** - Pass
+* **E** - Tackle / Steal
+
+## Technologies Used
+* Unity 3D
+* Photon PUN 2 (Multiplayer Networking)

@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: adf9e3c41a40b04419320985ed382042
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - openSound: {instanceID: 0}
+  - closeSound: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 387264
+  packageName: Fence Modular System LITE
+  packageVersion: 1.2.0
+  assetPath: Assets/Fence Modular System/Scripts/GateAnimationController.cs
+  uploadId: 976554
