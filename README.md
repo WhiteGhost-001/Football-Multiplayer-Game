@@ -19,3 +19,4 @@ A 1v1 multiplayer football (soccer) game built with Unity and Photon PUN 2.
 ## Technologies Used
 * Unity 3D
 * Photon PUN 2 (Multiplayer Networking)
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/becda58d-28be-4e21-848e-20f2d4130bdf" />
