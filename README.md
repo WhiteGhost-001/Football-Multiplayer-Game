@@ -5,6 +5,7 @@ A 1v1 multiplayer football (soccer) game built with Unity and Photon PUN 2.
 ## Features
 * **Online Multiplayer:** 1v1 matchmaking using Photon Unity Networking (PUN 2).
 * **Training Mode:** Offline single-player mode with AI practice dummies and slalom cones to hone your skills.
+* * **How To Play Mode:** Offline mode , teaching you the different commands and making you familiarize the game
 * **Stamina System:** Sprinting drains stamina, which regenerates over time.
 * **Dynamic Camera:** Third-person camera that smoothly follows the player and reacts to gameplay (e.g., screen shake on goals).
 
@@ -13,7 +14,7 @@ A 1v1 multiplayer football (soccer) game built with Unity and Photon PUN 2.
 * **LEFT SHIFT** - Sprint (Uses stamina)
 * **SPACE** - Shoot
 * **RIGHT CLICK** - Pass
-* **E** - Tackle / Steal
+* **E** - Tackle 
 
 ## Technologies Used
 * Unity 3D
