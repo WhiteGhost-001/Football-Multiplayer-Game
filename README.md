@@ -20,7 +20,13 @@ A 1v1 multiplayer football (soccer) game built with Unity and Photon PUN 2.
 * Unity 3D
 * Photon PUN 2 (Multiplayer Networking)
 
-## Gameplay Preview
+## Multiplayer Gameplay Preview
 *A live 1v1 online match. The interface displays the Red vs. Blue scoreboard, the match timer, and the active green stamina bar in the bottom left.*
 
 <img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/becda58d-28be-4e21-848e-20f2d4130bdf" />
+
+## Training Mode
+*A single-player training session. The Blue player practices dribbling and shooting among cones and static AI dummies, refining skills for online play.*
+
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/b26cfb2b-cdf6-40c4-b201-63b839494a26" />
+
